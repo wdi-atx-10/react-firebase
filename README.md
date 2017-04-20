@@ -16,3 +16,7 @@ REACT_APP_MESSAGING_SENDER_ID=1091194844530
 Use the Meme and MemeList components to display the images that are associated with each of the motivations. There should be 8 for each day.
 
 ** You may also want to change the CSS **
+
+## Licensing
+All content is licensed under a CC­BY­NC­SA 4.0 license.
+All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
