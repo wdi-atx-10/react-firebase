@@ -1,0 +1,36 @@
+
+body {
+  background: #ffe5b9;
+}
+
+h1 {
+  font-family: 'Ranga', cursive;
+}
+
+p {
+  font-family: 'Ranga', cursive;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.add-meme {
+  padding: 25px 25px 0;
+}
+
+.meme {
+  display: flex;
+	align-items: center;
+  justify-content: center;
+  padding: 0 5px 10px;
+  height: 320px;
+}
+
+.meme img {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 4px;
+  border: 1px solid #999;
+}
