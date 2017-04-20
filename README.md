@@ -13,7 +13,7 @@ REACT_APP_MESSAGING_SENDER_ID=1091194844530
 ```
 
 You will be primarily doing most of your work in the Motivation.js file.
-First you will need to connect to the Firebase data in the componentWillMount function. The database which you will be using is:
+First you will need to connect to the Firebase data in the componentWillMount function. The database reference which you will be using is:
 
 ```
 '/motivational'
