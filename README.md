@@ -12,6 +12,17 @@ REACT_APP_STORAGE_BUCKET=ga-memes-dev.appspot.com
 REACT_APP_MESSAGING_SENDER_ID=1091194844530
 ```
 
+You will be primarily doing most of your work in the Motivation.js file.
+First you will need to connect to the Firebase data in the componentWillMount function. The database which you will be using is:
+
+```
+'/motivational'
+```
+
+Then once you have correctly done this, you will need to map the response within the render function.
+
+
+
 ### Challenge
 Use the Meme and MemeList components to display the images that are associated with each of the motivations. There should be 8 for each day.
 
