@@ -19,7 +19,7 @@ First you will need to connect to the Firebase data in the componentWillMount fu
 '/motivational'
 ```
 
-Then once you have correctly done this, you will need to map the response within the render function.
+Then once you have correctly done this, you will need to map the response within the render function and pass it down to your Motivation List component.
 
 
 
