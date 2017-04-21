@@ -10,20 +10,25 @@ class Motivation extends Component {
     }
   }
   componentWillMount(){
-    //Write
-    //Your
-    //Code
-    //Here!
+    database.ref('/motivational')
+    .on('value', data => {
+      const results = firebaseListToArray(data.val());
+
+      this.setState({
+        motivations: results
+      });
+    });
   }
 
   render(){
-    //Write your const to pass down the state to the MotivationList.js Component
-    //
+    const motivationitems = this.state.motivations.map((motivationitem) => {
+      return <MotivationList description={ motivationitem.description } key={ motivationitem.id } />
+    });
 
     return(
       <section>
       <div className="row memes">
-        {motivationitems}
+        { motivationitems }
       </div>
     </section>
     )
