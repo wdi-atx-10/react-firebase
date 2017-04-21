@@ -6,7 +6,7 @@ class Header extends Component {
       <header>
        <div className="row">
          <div className="col-md-12">
-           <h1>Daily Motivation</h1>
+           <h1>Daily Memification</h1>
          </div>
        </div>
      </header>
