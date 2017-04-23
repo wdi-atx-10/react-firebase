@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MemeList from './MemeList';
+import Motivation from './Motivation';
 
 class MotivationList extends Component {
   render(){
