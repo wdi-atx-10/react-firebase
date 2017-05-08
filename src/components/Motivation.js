@@ -10,15 +10,21 @@ class Motivation extends Component {
     }
   }
   componentWillMount(){
-    //Write
-    //Your
-    //Code
-    //Here!
+    database.ref('/motivational')
+        .on('value', data => {
+          const results = firebaseListToArray(data.val());
+          console.log('motivations', results);
+
+          this.setState({
+            motivation: results
+          });
+        });
   }
 
   render(){
-    //Write your const to pass down the state to the MotivationList.js Component
-    //
+    const motivations = this.state.motivations.map((motivation) => {
+      return <Motivation key = { motivation.id } imageUrl  = { motivation.imageUrl } alt="" />;
+    });
 
     return(
       <section>
@@ -29,5 +35,3 @@ class Motivation extends Component {
     )
   };
 }
-
-export default Motivation;
